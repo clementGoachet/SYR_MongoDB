@@ -4,9 +4,11 @@ import java.util.List;
 
 import org.bson.types.ObjectId;
 
+import com.google.code.morphia.annotations.Entity;
 import com.google.code.morphia.annotations.Id;
 import com.google.code.morphia.annotations.Reference;
 
+@Entity
 public class Article {
 	
 	@Id

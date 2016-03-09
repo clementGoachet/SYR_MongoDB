@@ -17,7 +17,7 @@ public class App
 		Morphia morphia = new Morphia();	
 		Mongo mongo = new Mongo();
 		morphia.map(Person.class).map(Address.class);
-		Datastore ds = morphia.createDatastore(mongo, "my_database");
+		Datastore ds = morphia.createDatastore(mongo, "127.0.0.1:60381");
 		
 		Person p = new Person();
 		p.setName("Tintin");

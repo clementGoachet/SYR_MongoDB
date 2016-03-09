@@ -1,20 +1,24 @@
 package fr.istic.syr.tp7;
 
+import org.bson.types.ObjectId;
+
+import com.google.code.morphia.annotations.Entity;
 import com.google.code.morphia.annotations.Id;
 
+@Entity
 public class Address {
 
 	@Id
-	private int id;
+	private ObjectId id;
 	private String street;
 	private String city;
 	private String postCode;
 	private String country;
 	
-	public int getId() {
+	public ObjectId getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(ObjectId id) {
 		this.id = id;
 	}
 	public String getStreet() {
